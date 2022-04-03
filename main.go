@@ -5,6 +5,7 @@ import (
 	"github.com/675325758/go-misc-tools/mysql/sqlite3"
 	"github.com/675325758/go-misc-tools/mysql/mysql"
 	"github.com/675325758/go-misc-tools/redis"
+	"github.com/675325758/go-misc-tools/config"
 	"github.com/675325758/go-misc-tools/websocket"
 	"time"
 )
@@ -15,6 +16,7 @@ func main() {
 	websocket.Test()
 	sqlite3.Test()
 	mysql.Test();
+	config.Test();
 	for {
 		time.Sleep(time.Second)
 	}
