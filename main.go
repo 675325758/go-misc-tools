@@ -7,11 +7,13 @@ import (
 	"github.com/675325758/go-misc-tools/redis"
 	"github.com/675325758/go-misc-tools/config"
 	"github.com/675325758/go-misc-tools/websocket"
+	"github.com/675325758/go-misc-tools/cmd"
 	"time"
 )
 
 func main() {
 	fmt.Println("xxxxx")
+	cmd.Test();
 	redis.Test()
 	websocket.Test()
 	sqlite3.Test()
